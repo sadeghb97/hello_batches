@@ -1,0 +1,3 @@
+for /D %s in (*) do rename %s 1399-%s
+for %s in (*) do rename %s 1399-%s
+for %s in (*) do rename %s فارسی -%s
