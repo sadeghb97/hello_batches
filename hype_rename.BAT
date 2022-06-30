@@ -15,7 +15,7 @@ for /r /d %%g in (*) do (
 	SET "var="&for /f "delims=0123456789" %%i in ("!filename!") do set var=%%i
 	if defined var (echo !filename! NOT numeric) else (echo !filename! numeric)
 	if not defined var (echo ####### !filename! #######)
-	if not defined var (rename %%g to 1400-%%~ng)
+	if not defined var (rename %%g 1400-%%~ng)
 )
 endlocal
 Echo *********
